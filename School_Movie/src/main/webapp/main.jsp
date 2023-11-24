@@ -2,15 +2,10 @@
 	pageEncoding="UTF-8"%>
 <%@page import="com.Project.*"%>
 <%@ page import="java.util.*"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="./style.css">
+ <%@ include file="menu.jsp" %>
 
-<div id="user_bar">
-	<a href="#">로그인</a> <a href="#">회원가입</a>
+
+	
 	<%
 	String[] elements = { "rank", "movieNm", "openDt", "audiAcc", "salesAcc", "movieCd" };
 	String URl = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.xml?key=5908a328c6d57d18ca20a32bb9f14108&targetDt=";
@@ -21,16 +16,13 @@
 	List<Map> pubList2 = xmp2.XML_p(false);
 	int i = 0;
 	%>
-</div>
-</head>
-<body>
 	<nav id="topMenu">
 		<ul>
 			<li><a class="menuLink" href="./main.jsp">인기 영화</a></li>
-			<li><a class="menuLink" href="./Movie_Information.jsp">영화 상세 정보</a></li>
-			<li><a class="menuLink" href="#">감독 검색</a></li>
-			<li><a class="menuLink" href="#">영화인 검색</a></li>
-			<li><a class="menuLink" href="#">게시판</a></li>
+			<li><a class="menuLink" href="./Movie_Information.jsp">#</a></li>
+			<li><a class="menuLink" href="#">#</a></li>
+			<li><a class="menuLink" href="#">#</a></li>
+			<li><a class="menuLink" href="#">#</a></li>
 		</ul>
 	</nav>
 	<div id="main_poster">

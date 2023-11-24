@@ -59,6 +59,20 @@ public class MemberDAO {
 		return isExist;
 	}
 	
+	public int removeMember(String id) {
+		int result = 0;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "DELETE FROM member WHERE id = ?";
+		
+		try {
+			 conn = jdbcUtil.getConnection();
+			 pstmt = conn.prepareStatement(sql);
+			 pstmt.setString(1, id);
+			 result = pstmt.executeUpdate();
+		} catch (SQLException e) {e.printStackTrace();}
+		return result;
+	}
 	
 	
 	public int insertMember(MemberVo data) {

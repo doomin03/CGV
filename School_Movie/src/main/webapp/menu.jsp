@@ -19,11 +19,11 @@
 			<li><a class="menuLink" href="#">영화 상세 정보</a></li>
 			<li><a class="menuLink" href="#">#</a></li>
 			<li><a class="menuLink" href="#">#</a></li>
-			<%  } else {  %>>
+			<%  } else {  %>
 			<li><a class="menuLink" href="./main.jsp">인기 영화</a></li>
-			<li><a class="menuLink" href="#">영화 상세 정보</a></li>
 			<li><a class="menuLink" href="#">#</a></li>
-			<li><a class="menuLink" href="#">#</a></li>
+			<li><a class="menuLink" href="/School_Movie/quit">회원탈퇴</a></li>
+			<li><a class="menuLink" href="/School_Movie/logout">로그아웃 (<%= login.getMemberId() %>)</a></li>
 			<% } %>
 			
 			

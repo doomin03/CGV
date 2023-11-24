@@ -16,15 +16,7 @@
 	List<Map> pubList2 = xmp2.XML_p(false);
 	int i = 0;
 	%>
-	<nav id="topMenu">
-		<ul>
-			<li><a class="menuLink" href="./main.jsp">인기 영화</a></li>
-			<li><a class="menuLink" href="./Movie_Information.jsp">#</a></li>
-			<li><a class="menuLink" href="#">#</a></li>
-			<li><a class="menuLink" href="#">#</a></li>
-			<li><a class="menuLink" href="#">#</a></li>
-		</ul>
-	</nav>
+	
 	<div id="main_poster">
 		<h3>일간 인기 영화</h3>
 		<table>
